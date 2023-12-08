@@ -168,45 +168,7 @@ img {
     padding: 40px;
     color: #333;
 }
-/* Timeline Styles */
-.timeline {
-    margin: 40px 0;
-}
 
-.timeline-item {
-    display: flex;
-    margin-bottom: 40px;
-}
-
-.timeline-date {
-    width: 120px;
-    background-color: #4285f4; /* Different color for the timeline date */
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-}
-
-.timeline-content {
-    flex-grow: 1;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-.timeline-content h3 {
-    margin-bottom: 10px;
-}
-
-/* Media Query for Mobile View */
-@media screen and (max-width: 768px) {
-    .timeline-item {
-        flex-direction: column;
-    }
-
-    .timeline-date {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-}
 
 /* Blog Section Styles */
 .blog-section {
