@@ -177,7 +177,7 @@ img {
 
 .blog-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
@@ -186,12 +186,17 @@ img {
     box-sizing: border-box;
     position: relative;
     margin-bottom: 40px;
-    border: 2px solid #4285f4;
     border-radius: 8px;
     overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.blog-image {
+.improved-blog-entry:hover {
+    transform: scale(1.05);
+}
+
+.blog-thumbnail {
     width: 100%;
     height: auto;
     border-radius: 8px 8px 0 0;
@@ -199,6 +204,7 @@ img {
 
 .blog-content {
     padding: 20px;
+    background-color: #fff;
 }
 
 .blog-content h3 {
@@ -231,6 +237,7 @@ img {
         width: 100%;
     }
 }
+
 
 /* Improved Meet the Team Section Styles */
 .improved-meet-the-team {
