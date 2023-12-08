@@ -17,7 +17,6 @@
         preloader.style.display = 'none';
     });
 </script>
-<!-- Navigation Bar -->
 <nav class="navbar">
     <div class="logo">
         <img src="images/Untitled design.png" alt="Your Logo">
@@ -28,7 +27,24 @@
         <li><a href="#">Services</a></li>
         <li><a href="#">Contact</a></li>
     </ul>
+    <!-- Mobile Menu Toggle Button -->
+    <div class="mobile-menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
 </nav>
+
+<!-- Your existing HTML content goes here -->
+
+<script>
+    // JavaScript for mobile menu toggle
+    function toggleMenu() {
+        var navList = document.querySelector('.nav-list');
+        navList.classList.toggle('show');
+    }
+</script>
+
 <div class="slideshow-container">
     <div class="mySlides">
         <img src="images/13.png" style="width:100%">
