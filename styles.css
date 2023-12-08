@@ -2,66 +2,175 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  color: #333;
 }
 
-header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
-}
-
-nav {
+.navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #000;
 }
 
-nav ul {
+.navbar img {
+  width: 50px;
+  height: 50px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: inline-block;
+}
+
+.nav-links li a:hover {
+  background-color: #444;
+}
+
+.video-presentation {
+  position: relative;
+  padding: 2rem;
+  background-color: #f1f1f1;
+}
+
+.video-presentation iframe {
+  width: 100%;
+  height: 300px;
+}
+
+.video-presentation button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 0.5rem 1rem;
+  background-color: #0095ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.introduction {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #f7f7f7;
+}
+
+.introduction img {
+  width: 50%;
+}
+
+.introduction p {
+  width: 50%;
+  padding: 1rem;
+}
+
+.route-map,
+.blog-posts {
+  padding: 2rem;
+  background-color: #fafafa;
+}
+
+.route-map h2,
+.blog-posts h2 {
+  margin-bottom: 1rem;
+}
+
+.route-map ul,
+.blog-posts ul {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
-nav li {
-  display: inline-block;
-  padding: 10px;
+.route-map ul li,
+.blog-posts ul li {
+  margin-bottom: 0.5rem;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
+.team-members {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 2rem;
+  background-color: #f5f5f5;
 }
 
-nav a:hover {
-  color: #ddd;
+.team-members h2 {
+  margin-bottom: 1rem;
 }
 
-main {
-  padding: 20px;
-}
-
-footer {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
+.member {
+  width: 50%;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  nav {
-    display: block;
-  }
-
-  nav ul {
-    display: none;
-  }
-
-  nav li a {
-    display: block;
-    padding: 10px;
-  }
-
-  nav li a:hover {
-    background-color: #444;
-  }
+.member img {
+  width: 100%;
+  border-radius: 50%;
 }
+
+.member p {
+  margin-bottom: 1rem;
+}
+
+.member .social-media {
+  list-style: none;
+  padding: 0;
+}
+
+.member .social-media li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.google-map {
+  padding: 2rem;
+  background-color: #f3f3f3;
+}
+
+.google-map iframe {
+  width: 100%;
+  height: 300px;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background-color: #222;
+  color: #fff;
+}
+
+.contact-info {
+  flex: 1;
+}
+
+.social-media {
+  flex: 1;
+  text-align: right;
+}
+
+.fa-icons li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .introduction img,
+  .introduction p {
+    width: 100%;
+  }
+
+  
