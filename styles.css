@@ -236,14 +236,6 @@ img {
     .improved-blog-entry {
         width: 100%;
     }
-}
-
-/* Media Query for Mobile View */
-@media screen and (max-width: 768px) {
-    .improved-blog-entry {
-        width: 100%;
-    }
-}
 
 
 /* Improved Meet the Team Section Styles */
@@ -259,7 +251,7 @@ img {
 }
 
 .improved-team-member {
-    width: 48%;
+    width: 23%; /* Adjust the width to fit 4 members in a row */
     box-sizing: border-box;
     position: relative;
     margin-bottom: 40px;
@@ -313,7 +305,6 @@ img {
         width: 100%;
     }
 }
-
 /* Google Map Styles */
 .google-map {
     background-color: #eee;
