@@ -21,8 +21,9 @@ body {
     align-items: center;
 }
 
-.logo {
-    font-size: 1.5em;
+.logo img {
+    width: 50px; /* Adjust the width of your logo */
+    height: auto;
 }
 
 .nav-list {
