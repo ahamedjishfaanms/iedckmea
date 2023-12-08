@@ -143,6 +143,19 @@ img {
 .slideshow-button:hover {
     background-color: #333; /* Darker black on hover */
 }
+
+.notification-bar {
+  background-color: #3498db; /* Background color for the notification bar */
+  color: #fff; /* Text color for the notification text */
+  padding: 10px;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.notification-text {
+  display: inline-block;
+  padding-right: 100%; /* Create space for the marquee to move */
+}
 /* Introduction Section Styles */
 .introduction {
     background-color: #4285f4; /* Different color for the introduction section */
