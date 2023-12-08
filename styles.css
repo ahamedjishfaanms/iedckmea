@@ -39,29 +39,47 @@ body {
     color: #fff;
 }
 
-/* Video Container Styles */
-.video-container {
-    position: relative;
-    width: 100%;
+/* Slideshow Styles */
+.slideshow-container {
     max-width: 100%;
-    overflow: hidden;
+    position: relative;
+    margin: auto;
 }
 
-.video-container iframe {
+.mySlides {
+    display: none;
+}
+
+img {
     width: 100%;
-    height: 100%;
 }
 
-.video-button {
+/* Navigation Buttons Styles */
+.prev, .next {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 10px 20px;
-    background-color: #800080; /* Purple color */
-    color: #fff;
-    border: none;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-size: 20px;
     cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+    border: none;
+}
+
+.prev {
+    left: 0;
+    border-radius: 0 5px 5px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 5px 0 0 5px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darker background on hover */
 }
 
 /* Introduction Section Styles */
