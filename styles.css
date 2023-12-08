@@ -227,25 +227,56 @@ img {
 
 
 /* Team Members Section Styles */
-.team-members {
-    background-color: #fff;
-    padding: 40px;
-    color: #333;
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+/* Meet the Team Section Styles */
+.meet-the-team {
+    margin: 40px 0;
+    text-align: center;
 }
 
 .team-member {
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+
+.team-member-image {
+    width: 150px; /* Adjust the width of the team member images */
+    height: 150px;
+    border-radius: 50%;
     margin-bottom: 20px;
 }
 
-.team-member img {
-    width: 100px; /* Adjust the size of team member images */
-    height: 100px;
-    border-radius: 50%;
+.team-member-info {
+    text-align: center;
 }
+
+.social-media-links {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin-right: 10px;
+    background-color: #4285f4; /* Social media icon color */
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .team-member {
+        width: 100%;
+    }
+
+    .social-icon {
+        margin-bottom: 10px;
+    }
+}
+
 
 /* Google Map Styles */
 .google-map {
