@@ -37,59 +37,59 @@
 
 <!-- Your existing HTML content goes here -->
 
+
+<!-- Slideshow Container -->
+<div class="slideshow-container">
+    <div class="mySlides">
+        <img src="slide1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+        <img src="slide2.jpg" style="width:100%">
+    </div>
+
+    <!-- Add more slides as needed -->
+
+    <!-- Navigation buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094; Skip</a>
+    <a class="next" onclick="plusSlides(1)">Skip &#10095;</a>
+
+    <!-- Button -->
+    <a href="#" class="slideshow-button">Click Me</a>
+</div>
+
+
 <script>
     // JavaScript for mobile menu toggle
     function toggleMenu() {
         var navList = document.querySelector('.nav-list');
         navList.classList.toggle('show');
     }
-</script>
-
-<div class="slideshow-container">
-    <div class="mySlides">
-        <img src="images/13.png" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-        <img src="images/3.png" style="width:100%">
-    </div>
-
-    <!-- Add more slides as needed -->
-
-    <!-- Navigation buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)"> &#10095;</a>
-
-    <!-- Button -->
-    <a href="#" class="slideshow-button">Click Me</a>
-</div>
-
-<script>
-    // JavaScript for the slideshow
     var slideIndex = 1;
-    showSlides(slideIndex);
 
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
+    function showSlides() {
         var i;
         var slides = document.getElementsByClassName("mySlides");
-
-        if (n > slides.length) {
-            slideIndex = 1;
-        }
-
-        if (n < 1) {
-            slideIndex = slides.length;
-        }
 
         for (i = 0; i < slides.length; i++) {
             slides[i].style.display = "none";
         }
 
+        slideIndex++;
+
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+
         slides[slideIndex - 1].style.display = "block";
+        setTimeout(showSlides, 2000); // Change 2000 to the desired interval in milliseconds
+    }
+
+    // Start the automatic slideshow
+    showSlides();
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
     }
 </script>
 
