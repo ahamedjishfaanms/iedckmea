@@ -189,7 +189,7 @@ img {
     border-radius: 8px;
     overflow: hidden;
     transition: transform 0.3s ease-in-out;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added box shadow for a subtle shadow effect */
 }
 
 .improved-blog-entry:hover {
@@ -204,7 +204,7 @@ img {
 
 .blog-content {
     padding: 20px;
-    background-color: #fff;
+    background-color: #fff; /* Set column color to white */
 }
 
 .blog-content h3 {
