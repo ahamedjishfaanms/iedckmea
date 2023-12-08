@@ -246,7 +246,7 @@ img {
 
 .team-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between; /* Adjust spacing between team members */
     flex-wrap: wrap;
 }
 
@@ -305,6 +305,7 @@ img {
         width: 100%;
     }
 }
+
 /* Google Map Styles */
 .google-map {
     background-color: #eee;
