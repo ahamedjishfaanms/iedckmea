@@ -238,6 +238,13 @@ img {
     }
 }
 
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .improved-blog-entry {
+        width: 100%;
+    }
+}
+
 
 /* Improved Meet the Team Section Styles */
 .improved-meet-the-team {
