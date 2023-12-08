@@ -7,7 +7,16 @@
     <title>Your Website</title>
 </head>
 <body>
-
+<div class="preloader">
+    <img src="https://media.giphy.com/media/TvLuZ00OIADoQ/giphy.gif" alt="Loading...">
+</div>
+    <script>
+    // JavaScript for the preloader
+    window.addEventListener('load', function () {
+        var preloader = document.querySelector('.preloader');
+        preloader.style.display = 'none';
+    });
+</script>
 <!-- Navigation Bar -->
 <nav class="navbar">
     <div class="logo">Your Logo</div>
