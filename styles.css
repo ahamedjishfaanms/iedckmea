@@ -9,6 +9,7 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f0f0;
     color: #333;
+    margin: 0;
 }
 
 /* Navigation Bar Styles */
@@ -22,7 +23,7 @@ body {
 }
 
 .logo img {
-    width: 20px; /* Adjust the width of your logo */
+    width: 50px;
     height: auto;
 }
 
@@ -38,6 +39,47 @@ body {
 .nav-list a {
     text-decoration: none;
     color: #fff;
+}
+
+/* Mobile Menu Styles */
+.mobile-menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* Media Query for Mobile View */
+@media screen and (max-width: 768px) {
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #000;
+    }
+
+    .nav-list.show {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 0;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
 }
 
 /* Slideshow Styles */
