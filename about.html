@@ -1,26 +1,40 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-7bqHcdzUpv3sX5OCNQ4to9ge2yG6s4JQZrcsUjOG2rLg1JZJoNbtA+FL2Y7ZJJSZ4O4aNT73uKgLIzJqIO6JcA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>IEDC KMEA</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <div class="container">
-                <h1 class="logo">Your Logo</h1>
-                <ul class="nav-links">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+<div class="preloader">
+    <img src="https://lottie.host/99491a63-e8b5-41d6-abd2-5ecc89e305f7/01eLgThPAg.json" alt="Loading...">
+</div>
+    <script>
+    // JavaScript for the preloader
+    window.addEventListener('load', function () {
+        var preloader = document.querySelector('.preloader');
+        preloader.style.display = 'none';
+    });
+</script>
+<nav class="navbar">
+    <div class="logo">
+        <img src="images/Untitled design.png" alt="Your Logo">
+    </div>
+    <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="https://iedc.kmeacollege.ac.in/p/about-us.html">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+    <!-- Mobile Menu Toggle Button -->
+    <div class="mobile-menu-toggle" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</nav>
+
 
     <div class="container">
         <section id="about">
